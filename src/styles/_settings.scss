@@ -1,0 +1,157 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+
+  scroll-behavior: smooth;
+  // scroll-padding-top: min(6.3vw, 120px);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "TT_Moscow";
+  font-weight: 400;
+  font-style: normal;
+
+  src: local("TT_Moscow-Regular"),
+
+  url("../fonts/TT_Moscow_Economy_Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TT_Moscow";
+  font-weight: 500;
+  font-style: normal;
+
+  src: local("TT_Moscow-Medium"),
+
+  url("../fonts/TT_Moscow_Economy_Medium.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TT_Moscow";
+  font-weight: 700;
+  font-style: normal;
+
+  src: local("TT_Moscow-Bold"),
+
+  url("../fonts/TT_Moscow_Economy_Bold.ttf") format("truetype");
+  font-display: swap;
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 360px;
+  min-height: 100vh;
+  font-family: "TT_Moscow", sans-serif;
+  background-color: white;
+}
+
+section {
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+address {
+  font-style: normal;
+}
+
+select {
+  outline: none;
+  cursor: pointer;
+
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+       appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+hr,
+blockquote {
+  margin: 0;
+}
+
+hr {
+  border: none;
+}
